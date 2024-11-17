@@ -6,15 +6,30 @@
     <title>Document</title>
   </head>
   <body>
-    <div >
-    <button onclick="viart()">viart kohli</button>
-</div>
+    <div id="div">
+      <button onclick="virat()">viart kohli</button>
+      <button onclick="kl()">kl.rahul</button>
+    </div>
     <script>
       function virat() {
-        let div=document.createElement("div")
-        div.setAttribute("src","./vk1.jpg")
-        document.body.appendChild(div)
+        let div = document.createElement("div");
+        div.innerHTML = "virat kohli";
+        document.body.appendChild(div);
+        let img = document.createElement("img");
+        img.setAttribute("src", "./vk1.jpg");
+        img.style.height="100px"
+        div.append(img);
+      }
+      function kl() {
+        let div = document.createElement("div");
+        div.innerHTML = "KL.Rahul";
+        document.body.appendChild(div);
+        let img = document.createElement("img");
+        img.setAttribute("src", "./vk1.jpg");
+        img.style.height="100px"
+        div.append(img);
       }
     </script>
   </body>
 </html>
+
